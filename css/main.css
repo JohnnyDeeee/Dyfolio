@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Lato:300,400,700|Open+Sans');
+
+:root {
+    --background-main-color: #fff;
+    --main-font-family: 'Open Sans', sans-serif;
+    --header-font-family: 'Lato', sans-serif;
+    --default-transition-length: .7s;
+    --default-padding: 20px;
+    --main-font-color: #000;
+}
+
+html, body {
+    height: calc(100% - 23px);
+    font-family: var(--main-font-family);
+    transition: all var(--default-transition-length) ease-in-out;
+    color: var(--main-font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font-family);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.centerize {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-header {
+    padding-bottom: var(--default-padding);
+}
+
+.links {
+    padding-top: var(--default-padding);
+}
+
+.index-menu ul {
+    list-style-type: none;
+    padding: calc(var(--default-padding)/2);
+}
+
+.index-menu li {
+    display: inline;
+    text-transform: uppercase;
+    padding: var(--default-padding);
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.borderline {
+    border-bottom: 1px solid var(--main-font-color);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.single-link {
+    font-size: 12px;
+}
+
+.padding-top-quarter {
+    padding-top: calc(var(--default-padding)/4);
+}
