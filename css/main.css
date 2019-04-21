@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Lato:300,400,700|Open+Sans');
-
-:root {
-    --background-main-color: #fff;
-    --main-font-family: 'Open Sans', sans-serif;
-    --header-font-family: 'Lato', sans-serif;
-    --default-transition-length: .7s;
-    --default-padding: 20px;
-    --main-font-color: #000;
-}
+@import "animations.css";
+@import "global.css";
 
 html, body {
     height: calc(100% - 23px);
@@ -20,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--header-font-family);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-weight: 400;
 }
 
 .center-text {
@@ -46,11 +40,23 @@ h1, h2, h3, h4, h5, h6 {
     padding: calc(var(--default-padding)/2);
 }
 
-.index-menu li {
-    display: inline;
+.index-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.index-menu div {
     text-transform: uppercase;
     padding: var(--default-padding);
     cursor: pointer;
+}
+
+.swing-out {
+    animation: swing-lighter .35s ease-in-out !important;
+}
+
+.index-menu div:hover {
+    animation: swing .7s ease-in-out !important;
 }
 
 .pointer {
@@ -73,4 +79,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .padding-top-quarter {
     padding-top: calc(var(--default-padding)/4);
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.centerize-without-fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-top {
+    visibility: hidden;
+}
+
+.slide-top-animated {
+    visibility: visible;
+    animation: slide-from-top .5s ease-out;
+}
+
+.slide-bottom-animated {
+    animation: slide-from-bottom .5s ease-out;
 }

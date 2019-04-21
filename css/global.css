@@ -1,0 +1,9 @@
+:root {
+    --background-main-color: #fff;
+    --main-font-family: 'Open Sans', sans-serif;
+    --header-font-family: 'Lato', sans-serif;
+    --default-transition-length: .7s;
+    --default-padding: 20px;
+    --main-font-color: #000;
+    --secondary-font-color: rgba(0, 0, 0, .2);
+}
