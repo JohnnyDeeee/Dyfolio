@@ -26,3 +26,14 @@ for (let single of menu) {
         });
     }
 }
+
+let leftSliders = document.getElementsByClassName("slide-left");
+timeout = 0;
+
+for (let slider of leftSliders) {
+    setTimeout(() => {
+        slider.classList.add("slide-left-animated");
+    }, timeout);
+
+    timeout += baseTimeout;
+}
