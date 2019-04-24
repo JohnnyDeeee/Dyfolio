@@ -16,6 +16,19 @@ for (let slider of topSliders) {
     timeout += baseTimeout;
 }
 
+let bottomChildrenSliders = document.getElementsByClassName("slide-bottom-children");
+timeout: number = 0;
+
+for (let slider of bottomChildrenSliders) {
+    for (let innerSlider of slider.children) {
+        setTimeout(() => {
+            innerSlider.classList.add("slide-bottom-animated");
+        }, timeout);
+    }
+
+    timeout += baseTimeout;
+}
+
 let menu = document.getElementsByClassName("index-menu");
 for (let single of menu) {
     for (let child of single.children) {
