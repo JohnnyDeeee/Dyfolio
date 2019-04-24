@@ -7,7 +7,7 @@ html {
 }
 
 .borderline {
-    border-bottom: 2px solid var(--main-font-color);
+    border-bottom: 1.5px solid var(--main-font-color);
 }
 
 .index-menu div {
