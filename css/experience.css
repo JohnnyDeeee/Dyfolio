@@ -1,0 +1,5 @@
+@import "global.css";
+
+main div {
+    margin: calc(2 * var(--default-padding)) 0;
+}

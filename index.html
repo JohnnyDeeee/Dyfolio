@@ -13,9 +13,18 @@
         </h1>
     </header>
     <nav class="index-menu center-text borderline slide-top">
-        <div class="centerize-without-fill">About me</div>
-        <div class="centerize-without-fill">Experience</div>
-        <div class="centerize-without-fill">Projects</div>
+        <div onclick="navigateTo('about')"
+             class="centerize-without-fill">
+            About me
+        </div>
+        <div onclick="navigateTo('experience')"
+             class="centerize-without-fill">
+            Experience
+        </div>
+        <div onclick="navigateTo('projects')"
+             class="centerize-without-fill">
+            Projects
+        </div>
     </nav>
     <footer class="links center-text slide-top">
         <div class="links-grid">
@@ -58,5 +67,6 @@
 </nav>
 
 <script src="ts/slide.js"></script>
+<script src="ts/navigator.js"></script>
 </body>
 </html>
