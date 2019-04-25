@@ -114,10 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social-grid {
-    position: absolute;
     left: 0;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .social-cell {
@@ -168,13 +170,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-body {
-    width: 90%;
+    width: 80%;
     padding-top: calc(3 * var(--default-padding));
 }
 
 @media only screen and (min-width: 700px) {
     .main-body {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -186,11 +188,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 1200px) {
     .main-body {
-        width: 35%;
+        width: 40%;
     }
 }
 
 @media only screen and (min-width: 1500px) {
+    .main-body {
+        width: 35%;
+    }
 }
 
 .main-body nav {
@@ -199,16 +204,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     line-height: 1.5;
-}
-
-.single-job {
-    margin-top: 0;
-    margin-bottom: calc(4 * var(--default-padding));
-}
-
-.single-job p {
-    text-align: justify;
-    max-width: 80%;
 }
 
 .pb-2 {
