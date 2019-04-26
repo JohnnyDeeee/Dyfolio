@@ -1,87 +1,61 @@
-let getSourceFromService = {
+var getSourceFromService = {
     "github": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-github.svg",
     "linkedin": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-linkedin.svg",
     "facebook": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-facebook.svg"
 };
-
-interface Social {
-    link: string;
-    title: string;
-    service: string;
-}
-
-interface Socials {
-    socials: Social[];
-}
-
-class SingleSocial {
-    social: Social;
-
-    public constructor(social: Social) {
+var SingleSocial = /** @class */ (function () {
+    function SingleSocial(social) {
         this.social = social;
     }
-
-    public generate() {
-        let a = document.createElement("a");
-
+    SingleSocial.prototype.generate = function () {
+        var a = document.createElement("a");
         a.href = this.social.link;
         a.appendChild(this.generateSocialCell());
-
         return a;
-    }
-
-    private generateSocialCell() {
-        let div = document.createElement("div");
-        let img = document.createElement("img");
-        let span = document.createElement("span");
-
+    };
+    SingleSocial.prototype.generateSocialCell = function () {
+        var div = document.createElement("div");
+        var img = document.createElement("img");
+        var span = document.createElement("span");
         div.classList.add("social-cell", "slide-left");
         img.src = getSourceFromService[this.social.service];
         span.innerText = this.social.title;
-
         div.appendChild(img);
         div.appendChild(span);
         return div;
-    }
-}
-
-class Nav {
-    cells: Social[];
-
-    public constructor() {
+    };
+    return SingleSocial;
+}());
+var Nav = /** @class */ (function () {
+    function Nav() {
         this.cells = [];
     }
-
-    public addSocial(social: Social) {
+    Nav.prototype.addSocial = function (social) {
         this.cells.push(social);
-    }
-
-    generate() {
-        let nav = document.createElement("nav");
+    };
+    Nav.prototype.generate = function () {
+        var nav = document.createElement("nav");
         nav.classList.add("social-grid");
-
-        for (let singleCell of this.cells) {
-            let newCell: SingleSocial = new SingleSocial(singleCell);
+        for (var _i = 0, _a = this.cells; _i < _a.length; _i++) {
+            var singleCell = _a[_i];
+            var newCell = new SingleSocial(singleCell);
             nav.appendChild(newCell.generate());
         }
-
         return nav;
-    }
-}
-
-let newNav: Nav = new Nav();
-let xhttp: XMLHttpRequest = new XMLHttpRequest();
-
-xhttp.onload = function() {
+    };
+    return Nav;
+}());
+var newNav = new Nav();
+var xhttp = new XMLHttpRequest();
+xhttp.onload = function () {
     console.log(this.status);
     if (this.readyState == 4 && this.status == 200) {
-        let socials: Socials = JSON.parse(this.responseText);
+        var socials = JSON.parse(this.responseText);
         console.log(socials);
     }
 };
 xhttp.open("GET", "assets/jsons/socials.json", true);
 xhttp.send();
-
 newNav.addSocial({
     link: "https://github.com/fiffeek",
     title: "@fiffeek",
@@ -97,9 +71,8 @@ newNav.addSocial({
     title: "@fiffeek",
     service: "facebook"
 });
-
-let body = document.getElementsByTagName("body");
-
-for (let single of body) {
-        single.appendChild(newNav.generate());
+var body = document.getElementsByTagName("body");
+for (var _i = 0, body_1 = body; _i < body_1.length; _i++) {
+    var single = body_1[_i];
+    single.appendChild(newNav.generate());
 }
