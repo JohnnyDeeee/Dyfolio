@@ -48,7 +48,7 @@ class Menu {
 
 let bodys = document.getElementsByClassName("main-body");
 let menu: Menu = new Menu();
-let bodyWidth: number;
+let singleBody;
 
 menu.addItem("about", "About me");
 menu.addItem("experience", "Experience");
@@ -56,7 +56,7 @@ menu.addItem("projects", "projects");
 
 for (let body of bodys) {
     body.prepend(menu.generate());
-    bodyWidth = body.clientWidth;
+    singleBody = body;
 }
 
 function parseScroll() {
@@ -69,7 +69,7 @@ function parseScroll() {
 
         if (window.pageYOffset > offset) {
             navcpy.classList.add("sticky-menu");
-            navcpy.style.width = (5 + bodyWidth).toString() + "px";
+            navcpy.style.width = (5 + singleBody.clientWidth).toString() + "px";
             padding.style.paddingTop = "100px";
         } else {
             navcpy.classList.remove("sticky-menu");

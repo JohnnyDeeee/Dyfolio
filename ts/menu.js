@@ -37,14 +37,14 @@ var Menu = /** @class */ (function () {
 }());
 var bodys = document.getElementsByClassName("main-body");
 var menu = new Menu();
-var bodyWidth;
+var singleBody;
 menu.addItem("about", "About me");
 menu.addItem("experience", "Experience");
 menu.addItem("projects", "projects");
 for (var _i = 0, bodys_1 = bodys; _i < bodys_1.length; _i++) {
     var body = bodys_1[_i];
     body.prepend(menu.generate());
-    bodyWidth = body.clientWidth;
+    singleBody = body;
 }
 function parseScroll() {
     var navbars = document.getElementsByClassName("index-menu");
@@ -55,7 +55,7 @@ function parseScroll() {
         var navcpy = navbar;
         if (window.pageYOffset > offset) {
             navcpy.classList.add("sticky-menu");
-            navcpy.style.width = (5 + bodyWidth).toString() + "px";
+            navcpy.style.width = (5 + singleBody.clientWidth).toString() + "px";
             padding.style.paddingTop = "100px";
         }
         else {
