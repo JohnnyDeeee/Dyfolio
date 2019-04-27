@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-menu {
+    transition: all var(--default-transition-length) ease;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -212,4 +213,25 @@ p {
 
 .title {
     margin-bottom: calc(3 * var(--default-padding));
+}
+
+.main-body nav div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main-body nav div:first-child {
+    text-align: left;
+}
+
+.main-body nav div:last-child {
+    text-align: right;
+}
+
+.sticky-menu {
+    position: fixed;
+    top: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
+    padding-bottom: var(--default-padding);
+    z-index: 2;
 }

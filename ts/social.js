@@ -46,16 +46,6 @@ var Nav = /** @class */ (function () {
     return Nav;
 }());
 var newNav = new Nav();
-var xhttp = new XMLHttpRequest();
-xhttp.onload = function () {
-    console.log(this.status);
-    if (this.readyState == 4 && this.status == 200) {
-        var socials = JSON.parse(this.responseText);
-        console.log(socials);
-    }
-};
-xhttp.open("GET", "assets/jsons/socials.json", true);
-xhttp.send();
 newNav.addSocial({
     link: "https://github.com/fiffeek",
     title: "@fiffeek",

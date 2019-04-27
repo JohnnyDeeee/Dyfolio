@@ -16,6 +16,7 @@ p {
 .list {
     position: relative;
     top: 0;
+    margin-left: calc(var(--bullet-size) / 2);
 }
 
 .timeline:after {
@@ -37,19 +38,6 @@ p {
 
 .single-job p {
     text-align: justify;
-}
-
-.main-body nav div {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.main-body nav div:first-child {
-    text-align: left;
-}
-
-.main-body nav div:last-child {
-    text-align: right;
 }
 
 .single-job h3::before {

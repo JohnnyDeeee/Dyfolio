@@ -70,17 +70,6 @@ class Nav {
 }
 
 let newNav: Nav = new Nav();
-let xhttp: XMLHttpRequest = new XMLHttpRequest();
-
-xhttp.onload = function() {
-    console.log(this.status);
-    if (this.readyState == 4 && this.status == 200) {
-        let socials: Socials = JSON.parse(this.responseText);
-        console.log(socials);
-    }
-};
-xhttp.open("GET", "assets/jsons/socials.json", true);
-xhttp.send();
 
 newNav.addSocial({
     link: "https://github.com/fiffeek",
