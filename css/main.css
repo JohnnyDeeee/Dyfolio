@@ -172,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-body {
     width: 80%;
+    min-height: 120vh;
     padding-top: calc(3 * var(--default-padding));
 }
 

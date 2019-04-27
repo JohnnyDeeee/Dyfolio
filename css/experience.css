@@ -23,7 +23,7 @@ p {
     content: '';
     position: absolute;
     width: 1px;
-    background-color: var(--main-font-color);
+    background: var(--main-font-color);
     left: 0;
     height: 100%;
     top: calc(var(--bullet-size) - 1px);
@@ -56,5 +56,5 @@ p {
 
 .single-job:hover h3:before {
     background-color: var(--main-font-color);
-    transform: scale(.7);
+    transform: scale(.7) translateX(-1px);
 }

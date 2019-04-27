@@ -38,6 +38,25 @@
     }
 }
 
+@keyframes swing-lighter-no-skew {
+    25% {
+        transform: translateX(-2px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(2px);
+        opacity: .8;
+    }
+    75% {
+        transform: translateX(-1px);
+        opacity: .9;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slide-from-top {
     from {
         transform: translateY(-5px);
