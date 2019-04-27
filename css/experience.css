@@ -26,7 +26,7 @@ p {
     background-color: var(--main-font-color);
     left: 0;
     height: 100%;
-    top: calc(var(--bullet-size) / 2);
+    top: calc(var(--bullet-size) - 1px);
 }
 
 .single-job {
@@ -51,4 +51,10 @@ p {
     z-index: 1;
     border-radius: var(--bullet-size);
     border: 1px solid var(--main-font-color);
+    transition: all .3s ease;
+}
+
+.single-job:hover h3:before {
+    background-color: var(--main-font-color);
+    transform: scale(.7);
 }
