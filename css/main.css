@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     padding: var(--default-padding);
     cursor: pointer;
+    height: 28px;
 }
 
 .swing-out {
@@ -235,4 +236,13 @@ p {
     background: linear-gradient(180deg, var(--background-main-color) 75%, rgba(0, 0, 0, 0) 100%);
     padding-bottom: var(--default-padding);
     z-index: 2;
+}
+
+footer {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0;
+    height: calc(var(--default-padding) * 2);
+    background: linear-gradient(0deg, var(--background-main-color) 0%, rgba(0, 0, 0, 0) 100%);
 }

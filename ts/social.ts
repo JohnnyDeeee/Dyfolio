@@ -10,10 +10,6 @@ interface Social {
     service: string;
 }
 
-interface Socials {
-    socials: Social[];
-}
-
 class SingleSocial {
     social: Social;
 

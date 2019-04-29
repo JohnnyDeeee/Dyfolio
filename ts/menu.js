@@ -56,7 +56,7 @@ function parseScroll() {
         if (window.pageYOffset > offset) {
             navcpy.classList.add("sticky-menu");
             navcpy.style.width = (5 + singleBody.clientWidth).toString() + "px";
-            padding.style.paddingTop = "100px";
+            padding.style.paddingTop = "160px";
         }
         else {
             navcpy.classList.remove("sticky-menu");
