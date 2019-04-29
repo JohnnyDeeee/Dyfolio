@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Backend software developer",
+    "date": "10.2018 - 01.2019",
+    "imgUrl": "assets/img/turnstiles.png",
+    "description": "Developing a <a href='/'>web service</a> in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+  },
+  {
+    "title": "Backend software developer",
+    "date": "10.2018 - 01.2019",
+    "imgUrl": "assets/img/turnstiles.png",
+    "description": "Developing a <a href='/'>web service</a> in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+  },
+  {
+    "title": "Backend software developer",
+    "date": "10.2018 - 01.2019",
+    "imgUrl": "assets/img/turnstiles.png",
+    "description": "Developing a <a href='/'>web service</a> in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+  }
+]
