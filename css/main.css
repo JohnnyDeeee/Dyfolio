@@ -246,3 +246,7 @@ p {
     height: calc(var(--default-padding) * 2);
     background: linear-gradient(0deg, var(--background-main-color) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
+.smaller {
+    font-size: 12px !important;
+}
