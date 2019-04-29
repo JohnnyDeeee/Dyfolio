@@ -9,6 +9,7 @@
     --bullet-size: 11px;
     --scrollbar-background: darkgrey;
     --scrollbar-outline: slategrey;
+    --accent-color: #ee7399;
 }
 
 body::-webkit-scrollbar {
@@ -22,4 +23,9 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-background);
     outline: 1px solid var(--scrollbar-outline);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
 }
