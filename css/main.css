@@ -238,7 +238,7 @@ p {
     z-index: 2;
 }
 
-footer {
+.bottom-gradient {
     position: fixed;
     z-index: 2;
     width: 100%;
