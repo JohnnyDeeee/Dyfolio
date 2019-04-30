@@ -2,19 +2,19 @@
   {
     "title": "Backend software developer",
     "timeframe": "10.2018 - 01.2019",
-    "place": "SIO2project Warsaw, Poland",
-    "description": "Developing a <a href='/'>web service</a> in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+    "place": "SIO2project | Warsaw, Poland",
+    "description": "Developing a <a href='https://szkopul.edu.pl'>web service</a> in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases. <br> <br> For the majority of my time I worked on bug-fixing the website, as well as making selenium tests run on a new deployment server (with the help of hudson). Had a chance to learn about the state of the art dev-ops strategies. Aside from the regular JIRA tickets I built several projects on a strict deadline exercising i.e. python and google big query. Every built utilized Git, Gerrit and Hudson."
   },
   {
-    "title": "Backend software developer",
-    "timeframe": "10.2018 - 01.2019",
-    "place": "SIO2project Warsaw, Poland",
-    "description": "Developing a web service in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+    "title": "Intern frontend software developer",
+    "timeframe": "07.2018 - 09.2019",
+    "place": "cosmose.co | Warsaw, Poland",
+    "description": "Working in a small autonomous team in order to develop an <a href='https://summer-uw.cosmose.cloud'>analytics service</a> for online statistics of offline-based clients. Creatively developing a responsive cross-platform web service <a href='https://bit.ly/cosmoseDesign'> (preview) </a> in angular 5 and learning UI principles. <br> <br> Had a chance to work in a real-life environment on a completely new product. Learnt how to develop and deploy a standalone front-end application while utilizing angular, html and css. Used the Agile Methodology and Git throughout the project. <br> <br> Studied caching, asynchronous calls and lots of stuff connected to performance. Discussed the design choices with the company's designers and programmers on a daily basis."
   },
   {
-    "title": "Backend software developer",
-    "timeframe": "10.2018 - 01.2019",
-    "place": "SIO2project Warsaw, Poland",
-    "description": "Developing a web service in a University of Warsaw's organization that is used by programmers to test their skills and by the Polish Olympiad in Informatics to make contests. Main objective of the project was to learn Django and databases."
+    "title": "Motion graphic designer",
+    "timeframe": "06.2017 - 07.2017",
+    "place": "futuramo.com | Cracow, Poland",
+    "description": "Teamworking with other computer graphic designers and marketing team. <a href='https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg'> Video </a> production - <a href='https://bit.ly/futuramoapps'> product promotion </a> for the futuramo apps. <br> <br> Had a blast while designing the entire promotion alongside other designers who could help me optimise and reinvent my workflow. I also improved the company's system which contacted them with possible clients and managed the clients' databases."
   }
 ]
