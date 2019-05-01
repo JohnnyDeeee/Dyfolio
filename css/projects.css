@@ -13,6 +13,7 @@
     margin-top: 0;
     margin-bottom: calc(4 * var(--default-padding));
     position: relative;
+    transition: all .5s ease;
 }
 
 .single-project p {
@@ -28,6 +29,11 @@
     background-repeat: no-repeat;
     filter: grayscale(100%);
     transition: all .5s ease;
+    border-radius: 4px;
+}
+
+.single-project:hover {
+    padding-bottom: var(--default-padding);
 }
 
 .single-project:hover .img-container {
@@ -44,4 +50,8 @@
 
 main div {
     margin-top: 0;
+}
+
+.list {
+    margin-left: 0;
 }
