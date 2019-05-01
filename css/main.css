@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .index-menu {
-    transition: all var(--default-transition-length) ease;
+    transition: all .5s ease;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -234,8 +234,7 @@ p {
 .sticky-menu {
     position: fixed;
     top: 0;
-    background: linear-gradient(180deg, var(--background-main-color) 75%, rgba(0, 0, 0, 0) 100%);
-    padding-bottom: var(--default-padding);
+    background: var(--background-main-color);
     z-index: 2;
 }
 
@@ -244,8 +243,6 @@ p {
     z-index: 2;
     width: 100%;
     bottom: 0;
-    height: calc(var(--default-padding) * 2);
-    background: linear-gradient(0deg, var(--background-main-color) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .smaller {

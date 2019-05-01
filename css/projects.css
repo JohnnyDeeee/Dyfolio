@@ -30,6 +30,7 @@
     filter: grayscale(100%);
     transition: all .5s ease;
     border-radius: 4px;
+    border: 1px solid var(--main-font-color);
 }
 
 .single-project:hover {

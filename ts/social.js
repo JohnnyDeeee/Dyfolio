@@ -1,7 +1,11 @@
 var getSourceFromService = {
     "github": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-github.svg",
     "linkedin": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-linkedin.svg",
-    "facebook": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-facebook.svg"
+    "facebook": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-facebook.svg",
+    "cv": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-cv.png",
+    "leetcode": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-leetcode.png",
+    "youtube": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-youtube.svg",
+    "telegram": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-telegram.png",
 };
 var SingleSocial = /** @class */ (function () {
     function SingleSocial(social) {
@@ -60,6 +64,26 @@ newNav.addSocial({
     link: "https://www.facebook.com/fiffeek",
     title: "@fiffeek",
     service: "facebook"
+});
+newNav.addSocial({
+    link: "http://bit.ly/cvMikinaFilipV5",
+    title: "online cv",
+    service: "cv"
+});
+newNav.addSocial({
+    link: "https://leetcode.com/fiffeek/",
+    title: "@fiffeek",
+    service: "leetcode"
+});
+newNav.addSocial({
+    link: "https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg",
+    title: "@filipmikina",
+    service: "youtube"
+});
+newNav.addSocial({
+    link: "mailto:filipmikina@gmail.com",
+    title: "@filipmikina",
+    service: "telegram"
 });
 var body = document.getElementsByTagName("body");
 for (var _i = 0, body_1 = body; _i < body_1.length; _i++) {
