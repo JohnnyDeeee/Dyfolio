@@ -2,7 +2,8 @@ interface AboutMe {
     name: string
     email: string
     telVisible: string
-    aboutMe: string
+    aboutMe: string,
+    pageTitle: string | null | undefined
 }
 
 class PersonalDataUpdater {
@@ -17,6 +18,7 @@ class PersonalDataUpdater {
         this.updateMail();
         this.updateTel();
         this.updateAboutMe();
+        this.updatePageTitle();
     }
 
     private updateName() {
@@ -41,6 +43,12 @@ class PersonalDataUpdater {
 
     private updateAboutMe() {
         PersonalDataUpdater.getAndUpdate("about-me", this.data.aboutMe);
+    }
+
+    private updatePageTitle() {
+        if (this.data.pageTitle) {
+            document.title = this.data.pageTitle;
+        }
     }
 
     private static getAndUpdate(what: string, to: string) {
