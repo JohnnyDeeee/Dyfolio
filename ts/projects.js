@@ -52,7 +52,6 @@ var Projects = /** @class */ (function () {
 }());
 var handler = new XMLHttpReqHandler("projects", makeProjects);
 function makeProjects(str) {
-    console.log(str);
     var projects = JSON.parse(str);
     var dom = document.getElementById("projects-timeline");
     var aux = new Projects();

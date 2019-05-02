@@ -79,7 +79,6 @@ class Projects {
 let handler = new XMLHttpReqHandler("projects", makeProjects);
 
 function makeProjects(str: string) {
-    console.log(str);
     let projects: ProjectDesc[] = JSON.parse(str);
     let dom = document.getElementById("projects-timeline");
     let aux = new Projects();

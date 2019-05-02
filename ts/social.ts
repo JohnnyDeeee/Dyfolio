@@ -73,9 +73,9 @@ let handler = new XMLHttpReqHandler("socials", makeJobs);
 
 function makeJobs(str: string) {
     let socials: Social[] = JSON.parse(str);
-    console.log(socials);
     let body = document.getElementsByTagName("body");
     let newNav: Nav = new Nav();
+
     socials.forEach((val) => {
        newNav.addSocial(val);
     });

@@ -1,6 +1,6 @@
 function slideDOM() {
 
-    let topSliders = document.getElementsByClassName("slide-top");
+    let topSliders: any = document.getElementsByClassName("slide-top");
     const baseTimeout = 100;
     let timeout: number = 0;
 
@@ -18,7 +18,7 @@ function slideDOM() {
         timeout += baseTimeout;
     }
 
-    let menu = document.getElementsByClassName("index-menu");
+    let menu: any = document.getElementsByClassName("index-menu");
     for (let single of menu) {
         for (let child of single.children) {
             child.addEventListener("mouseout", function(event) {
@@ -29,7 +29,7 @@ function slideDOM() {
         }
     }
 
-    let leftSliders = document.getElementsByClassName("slide-left");
+    let leftSliders: any = document.getElementsByClassName("slide-left");
     timeout = 0;
 
     for (let slider of leftSliders) {

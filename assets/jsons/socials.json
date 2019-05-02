@@ -1,17 +1,37 @@
 [
   {
     "link": "https://github.com/fiffeek",
-    "title": "@fiffeek",
+    "title": "github",
     "service": "github"
   },
   {
     "link": "https://www.linkedin.com/in/filipmikina/",
-    "title": "@filipmikina",
+    "title": "linkedin",
     "service": "linkedin"
   },
   {
     "link": "https://www.facebook.com/fiffeek",
-    "title": "@fiffeek",
+    "title": "facebook",
     "service": "facebook"
+  },
+  {
+    "link": "http://bit.ly/cvMikinaFilipV5",
+    "title": "online cv",
+    "service": "cv"
+  },
+  {
+    "link": "https://leetcode.com/fiffeek/",
+    "title": "leetcode",
+    "service": "leetcode"
+  },
+  {
+    "link": "https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg",
+    "title": "youtube",
+    "service": "youtube"
+  },
+  {
+    "link": "mailto:filipmikina@gmail.com",
+    "title": "contact",
+    "service": "telegram"
   }
 ]

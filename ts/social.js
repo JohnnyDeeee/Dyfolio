@@ -52,7 +52,6 @@ var Nav = /** @class */ (function () {
 var handler = new XMLHttpReqHandler("socials", makeJobs);
 function makeJobs(str) {
     var socials = JSON.parse(str);
-    console.log(socials);
     var body = document.getElementsByTagName("body");
     var newNav = new Nav();
     socials.forEach(function (val) {
