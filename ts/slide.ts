@@ -6,12 +6,16 @@ function slideDOM() {
 
     for (let slider of topSliders) {
         setTimeout(() => {
-            slider.classList.add("slide-top-animated");
+            if (!slider.classList.contains("slide-top-animated")) {
+                slider.classList.add("slide-top-animated");
+            }
         }, timeout);
 
         for (let innerSlider of slider.children) {
             setTimeout(() => {
-                innerSlider.classList.add("slide-bottom-animated");
+                if (!innerSlider.classList.contains("slide-bottom-animated")) {
+                    innerSlider.classList.add("slide-bottom-animated");
+                }
             }, timeout);
         }
 
@@ -34,7 +38,9 @@ function slideDOM() {
 
     for (let slider of leftSliders) {
         setTimeout(() => {
-            slider.classList.add("slide-left-animated");
+            if (!slider.classList.contains("slide-left-animated")) {
+                slider.classList.add("slide-left-animated");
+            }
         }, timeout);
 
         timeout += baseTimeout;

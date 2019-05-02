@@ -4,11 +4,15 @@ function slideDOM() {
     var timeout = 0;
     var _loop_1 = function (slider) {
         setTimeout(function () {
-            slider.classList.add("slide-top-animated");
+            if (!slider.classList.contains("slide-top-animated")) {
+                slider.classList.add("slide-top-animated");
+            }
         }, timeout);
         var _loop_4 = function (innerSlider) {
             setTimeout(function () {
-                innerSlider.classList.add("slide-bottom-animated");
+                if (!innerSlider.classList.contains("slide-bottom-animated")) {
+                    innerSlider.classList.add("slide-bottom-animated");
+                }
             }, timeout);
         };
         for (var _i = 0, _a = slider.children; _i < _a.length; _i++) {
@@ -40,7 +44,9 @@ function slideDOM() {
     timeout = 0;
     var _loop_3 = function (slider) {
         setTimeout(function () {
-            slider.classList.add("slide-left-animated");
+            if (!slider.classList.contains("slide-left-animated")) {
+                slider.classList.add("slide-left-animated");
+            }
         }, timeout);
         timeout += baseTimeout;
     };
