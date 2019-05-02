@@ -13,15 +13,15 @@ var Job = /** @class */ (function () {
         return outerDiv;
     };
     Job.prototype.createTitle = function () {
-        return this.createCustom("h3", this.desc.title);
+        return Job.createCustom("h3", this.desc.title);
     };
     Job.prototype.createTimeframe = function () {
-        return this.createCustom("h4", this.desc.timeframe + "<br>" + this.desc.place);
+        return Job.createCustom("h4", this.desc.timeframe + "<br>" + this.desc.place);
     };
     Job.prototype.createParagraph = function () {
-        return this.createCustom("p", this.desc.description);
+        return Job.createCustom("p", this.desc.description);
     };
-    Job.prototype.createCustom = function (tag, inner) {
+    Job.createCustom = function (tag, inner) {
         var item = document.createElement(tag);
         item.innerHTML = inner;
         return item;
@@ -56,4 +56,5 @@ function makeJobs(str) {
         auxTimeline.add(new Job(job));
     }
     timeline.appendChild(auxTimeline.generate());
+    slideDOM();
 }

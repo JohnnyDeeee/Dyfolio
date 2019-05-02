@@ -89,4 +89,5 @@ function makeProjects(str: string) {
     });
 
     dom.appendChild(aux.generate());
+    slideDOM();
 }

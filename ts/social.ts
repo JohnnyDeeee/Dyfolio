@@ -69,46 +69,20 @@ class Nav {
     }
 }
 
-let newNav: Nav = new Nav();
+let handler = new XMLHttpReqHandler("socials", makeJobs);
 
-newNav.addSocial({
-    link: "https://github.com/fiffeek",
-    title: "@fiffeek",
-    service: "github"
-});
-newNav.addSocial({
-    link: "https://www.linkedin.com/in/filipmikina/",
-    title: "@filipmikina",
-    service: "linkedin"
-});
-newNav.addSocial({
-    link: "https://www.facebook.com/fiffeek",
-    title: "@fiffeek",
-    service: "facebook"
-});
-newNav.addSocial({
-    link: "http://bit.ly/cvMikinaFilipV5",
-    title: "online cv",
-    service: "cv"
-});
-newNav.addSocial({
-    link: "https://leetcode.com/fiffeek/",
-    title: "@fiffeek",
-    service: "leetcode"
-});
-newNav.addSocial({
-    link: "https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg",
-    title: "@filipmikina",
-    service: "youtube"
-});
-newNav.addSocial({
-    link: "mailto:filipmikina@gmail.com",
-    title: "@filipmikina",
-    service: "telegram"
-});
+function makeJobs(str: string) {
+    let socials: Social[] = JSON.parse(str);
+    console.log(socials);
+    let body = document.getElementsByTagName("body");
+    let newNav: Nav = new Nav();
+    socials.forEach((val) => {
+       newNav.addSocial(val);
+    });
 
-let body = document.getElementsByTagName("body");
-
-for (let single of body) {
+    for (let single of body) {
         single.appendChild(newNav.generate());
+    }
+
+    slideDOM();
 }

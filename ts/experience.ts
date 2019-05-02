@@ -26,19 +26,19 @@ class Job {
     }
 
     private createTitle() {
-        return this.createCustom("h3", this.desc.title);
+        return Job.createCustom("h3", this.desc.title);
     }
 
     private createTimeframe() {
-        return this.createCustom("h4",
+        return Job.createCustom("h4",
             this.desc.timeframe + "<br>" + this.desc.place);
     }
 
     private createParagraph() {
-        return this.createCustom("p", this.desc.description);
+        return Job.createCustom("p", this.desc.description);
     }
 
-    private createCustom(tag: string, inner: string) {
+    private static createCustom(tag: string, inner: string) {
         let item = document.createElement(tag);
         item.innerHTML = inner;
         return item;
@@ -79,4 +79,5 @@ function makeJobs(str: string) {
     }
 
     timeline.appendChild(auxTimeline.generate());
+    slideDOM();
 }

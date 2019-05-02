@@ -60,4 +60,5 @@ function makeProjects(str) {
         aux.add(new Project(value));
     });
     dom.appendChild(aux.generate());
+    slideDOM();
 }

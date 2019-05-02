@@ -49,44 +49,18 @@ var Nav = /** @class */ (function () {
     };
     return Nav;
 }());
-var newNav = new Nav();
-newNav.addSocial({
-    link: "https://github.com/fiffeek",
-    title: "@fiffeek",
-    service: "github"
-});
-newNav.addSocial({
-    link: "https://www.linkedin.com/in/filipmikina/",
-    title: "@filipmikina",
-    service: "linkedin"
-});
-newNav.addSocial({
-    link: "https://www.facebook.com/fiffeek",
-    title: "@fiffeek",
-    service: "facebook"
-});
-newNav.addSocial({
-    link: "http://bit.ly/cvMikinaFilipV5",
-    title: "online cv",
-    service: "cv"
-});
-newNav.addSocial({
-    link: "https://leetcode.com/fiffeek/",
-    title: "@fiffeek",
-    service: "leetcode"
-});
-newNav.addSocial({
-    link: "https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg",
-    title: "@filipmikina",
-    service: "youtube"
-});
-newNav.addSocial({
-    link: "mailto:filipmikina@gmail.com",
-    title: "@filipmikina",
-    service: "telegram"
-});
-var body = document.getElementsByTagName("body");
-for (var _i = 0, body_1 = body; _i < body_1.length; _i++) {
-    var single = body_1[_i];
-    single.appendChild(newNav.generate());
+var handler = new XMLHttpReqHandler("socials", makeJobs);
+function makeJobs(str) {
+    var socials = JSON.parse(str);
+    console.log(socials);
+    var body = document.getElementsByTagName("body");
+    var newNav = new Nav();
+    socials.forEach(function (val) {
+        newNav.addSocial(val);
+    });
+    for (var _i = 0, body_1 = body; _i < body_1.length; _i++) {
+        var single = body_1[_i];
+        single.appendChild(newNav.generate());
+    }
+    slideDOM();
 }
