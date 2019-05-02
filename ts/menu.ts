@@ -46,7 +46,7 @@ class Menu {
     }
 }
 
-let bodys = document.getElementsByClassName("main-body");
+let bodys: any = document.getElementsByClassName("main-body");
 let menu: Menu = new Menu();
 let singleBody;
 
@@ -60,7 +60,7 @@ for (let body of bodys) {
 }
 
 function parseScroll() {
-    let navbars = document.getElementsByClassName("index-menu");
+    let navbars: any = document.getElementsByClassName("index-menu");
     let padding = document.getElementById("add-padding") as HTMLElement;
 
     for (let navbar of navbars) {
