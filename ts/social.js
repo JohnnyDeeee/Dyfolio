@@ -6,6 +6,21 @@ var getSourceFromService = {
     "leetcode": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-leetcode.png",
     "youtube": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-youtube.svg",
     "telegram": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-telegram.png",
+    "behance": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-behance.svg",
+    "devianart": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-devianart.svg",
+    "dribble": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-dribble.svg",
+    "dropbox": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-dropbox.svg",
+    "evernote": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-evernote.svg",
+    "google-plus": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-google-plus.svg",
+    "instagram": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-instagram.svg",
+    "pinterest": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-pinterest.svg",
+    "product-hunt": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-product-hunt.svg",
+    "skype": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-skype.svg",
+    "slack": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-slack.svg",
+    "spotify": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-spotify.svg",
+    "twitter": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-twitter.svg",
+    "vimeo": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-vimeo.svg",
+    "wordpress": "assets/icons/nucleo-social-icons/nucleo-social-icons/svg/social-1_round-wordpress.svg",
 };
 var SingleSocial = /** @class */ (function () {
     function SingleSocial(social) {
