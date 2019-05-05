@@ -6,7 +6,7 @@ A minimal portfolio generator for programmers. Its name originates from dynamic 
 
 I know that there are a lot of tools which allow you to customise and/or make a portfolio. However, every single one of them is bloated with stuff that you would not actually use when running a portfolio website for your programming projects (hi wordpress). That's why I decided to make a minimal one, in which the end-user would only update the data they actually need. 
 
-The only thing that any Stalofio's user is required to do is to change some data in json files, and that's it. The js scripts will fetch the data on the next refresh on the client's side, with the updated files and generate the entire htmls on the fly.
+The only thing that any Dyfolio's user is required to do is to change some data in json files, and that's it. The js scripts will fetch the data on the next refresh on the client's side, with the updated files and generate the entire htmls on the fly.
 
 This is a very small-sized 'library'; it does not use any external apis or 3rd party plugins etc. I really wanted to go with React on this one but after some time I thought that it would be an overkill for such a minimal website and sticked to vanilla js (actually, everything was written in typescript and was compiled to js afterwards).
 
