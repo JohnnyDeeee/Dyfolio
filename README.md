@@ -14,11 +14,11 @@ This is a very small-sized 'library'; it does not use any external apis or 3rd p
 
 This is more less what you can do with this generator (I used some html in my jsons, to inject some links etc. but you can do it too, I will explain that part later, for the most part I have not done anything outside of the box here). <br>
 
-<a href="http://filipmikina.pl">Click here</a> to check out my portfolio, generated with Dyolio
+<a href="http://filipmikina.pl">Click here</a> to check out my portfolio, generated with Dyfolio
 
 ## What do I download?
 
-You can simply download this repository and update the information, however, I provided a more simple version in the 'release' tab on github (you can directly download it there or <a href="http://bit.ly/stafolio">here</a>).
+You can simply download this repository and update the information, however, I provided a more simple version in the 'release' tab on github (you can directly download it there or <a href="http://bit.ly/dyfolio">here</a>).
 
 ## Does it work on all browsers?
 
