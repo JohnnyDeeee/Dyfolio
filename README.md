@@ -1,6 +1,6 @@
-# Stafolio
+# Dyfolio
 
-A minimal portfolio generator for programmers. Its name originates from Static Portfolio Generator. The tool makes it easier for programmers to generate their entire website, without touching any html or css files, and to update their data on the fly using only json files.
+A minimal portfolio generator for programmers. Its name originates from dynamic portfolio generator. The tool makes it easier for programmers to generate their entire website, without touching any html or css files, and to update their data on the fly using only json files. The idea is that everytime you make a change in any json file the users browser will fetch the data on the next refresh and update the data acordingly.
 
 ## Motivation
 
@@ -14,7 +14,7 @@ This is a very small-sized 'library'; it does not use any external apis or 3rd p
 
 This is more less what you can do with this generator (I used some html in my jsons, to inject some links etc. but you can do it too, I will explain that part later, for the most part I have not done anything outside of the box here). <br>
 
-<a href="http://filipmikina.pl">Click here</a> to check out my portfolio, generated with Stafolio
+<a href="http://filipmikina.pl">Click here</a> to check out my portfolio, generated with Dyolio
 
 ## What do I download?
 
@@ -28,7 +28,7 @@ It should. I recommend using chrome or firefox, though. For testing etc. you can
 google-chrome --allow-file-access-from-files
 ```
 
-# Adjusting Stafolio to your needs
+# Adjusting Dyfolio to your needs
 
 If you are familiar with json you should be okay adjusting the folio to your needs, if not I hope that the little tutorial below will help.
 
