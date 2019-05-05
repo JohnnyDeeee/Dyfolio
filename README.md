@@ -123,7 +123,7 @@ Currently, the mobile website is not as scalable as it should be - it will be fi
 
 # Typescript files
 
-I have recently deleted .js files from the repository, as my mates told me it is unproffesional to keep them. In release mode and in download you still got 'em (and only them), but for other people who fork this, you may want to compile ts files to js, so this command might help (do it in `/ts` directory).
+To compile typescript files, navigate to the /ts directory and use the command:
 
 ```bash
 tsc -w -p .
