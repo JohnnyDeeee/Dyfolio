@@ -120,3 +120,13 @@ In `global.css` you can adjust the theme of the site, however I do recommend lea
 # Issues
 
 Currently, the mobile website is not as scalable as it should be - it will be fixed soon. I also want to add the image in projects to be optional and if the image is provided for the user to choose whether they want to disply it horizontally or vertically.
+
+# Typescript files
+
+I have recently deleted .js files from the repository, as my mates told me it is unproffesional to keep them. In release mode and in download you still got 'em (and only them), but for other people who fork this, you may want to compile ts files to js, so this command might help (do it in `/ts` directory).
+
+```bash
+tsc -w -p .
+```
+
+I will add the script for that soon.
