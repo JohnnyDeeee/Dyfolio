@@ -1,0 +1,23 @@
+{
+  "name": "dyfolio",
+  "version": "1.0.0",
+  "description": "A tool for programmers to generate minimalistic programming portfolio with ease (preview: http://filipmikina.pl/).",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnnyDeeee/Dyfolio.git"
+  },
+  "author": "fiffeek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnnyDeeee/Dyfolio/issues"
+  },
+  "homepage": "https://github.com/JohnnyDeeee/Dyfolio#readme",
+  "dependencies": {
+    "@types/js-yaml": "^3.12.2",
+    "js-yaml": "^3.13.1"
+  }
+}

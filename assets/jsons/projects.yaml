@@ -1,0 +1,218 @@
+---
+- title: Gravitational Pull and Repelling
+  imgUrl: '/assets/img/project1/thumbnail.gif'
+  date: 06-01-2019
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/Gravitationalpull'>Github</a>.</small>
+    <p>
+    I am currently reading the book Nature of Code by Daniel Shiffman.
+    <small>You can read the book for free online at <a href='https://natureofcode.com/'>The Nature of Code</a>.</small>
+    </p>
+    <p>
+    This project was inspired by chapter 2.9 <small>(Gravitational Attraction)</small> and chapter 
+    2.10 <small>(Everything Attracts (or Repels) Everything)</small>
+    In these chapters Daniel explains the formula of Gravity.
+    Using this i created a simulation where we have 2 objects: movers, attractors.
+    </p>
+    <p>
+    The mover objects can receive basic forces for 'moving' around 
+    <small>(in reallity this 'moving' is just getting 'pushed' around)</small>
+    </p
+    <p>
+    The attractor objects can excert forces onto the movers around them 
+    <small>('around' is not really being checked here, the attractors just use a list of 
+    <b>all</b> the mover objects)</small>
+    </p>
+    
+- title: Friction and Fluid resistance
+  imgUrl: '/assets/img/project2/thumbnail.gif'
+  date: 05-01-2019
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/PhysicsPractice'>Github</a>.</small>
+    <p>
+    I am currently reading the book Nature of Code by Daniel Shiffman.
+    <small>You can read the book for free online at <a href='https://natureofcode.com/'>The Nature of Code</a>.</small>
+    </p>
+    <p>
+    This project was inspired by chapter 2.8 <small>(Air and Fluid Resistance)</small>
+    In this chapter Daniel explains the formula of friction.
+    Using this formula i created a simple simulation that has 2 actors: movers, liquid.
+    </p>
+    <p>
+    The mover object can receive forces and is subject to gravity. It falls down
+    into another object called Liquid.
+    </p>
+    <p>
+    The liquid object applies a certain amount of friction onto all the movers that
+    are within the liquid's bounds.
+    </p>
+    <p>
+    The amount of friction is different due to the mover's mass. So heavier movers tend
+    to 'drown' faster than lighter movers <small>(like in the real world)</small>
+    </p>
+
+- title: Steering behaviours
+  imgUrl: '/assets/img/project3/thumbnail.gif'
+  date: 05-11-2018
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/SteeringBehaviors'>Github</a>.</small>
+    <p>
+    This simulation is based on the <a href='http://www.red3d.com/cwr/steer/gdc99/'>Steering Behaviors For Autonomous Characters</a>
+    whitepaper by Craig Reynolds.
+    </p>
+    <p>
+    In this whitepaper Craig explains a couple methods of steering behaviours for agents.
+    I created a simulation with agents who move at a constant velocity, objects that act
+    as 'walls' and a target for the agents to reach.
+    I have implemented the following behaviours from the whitepaper:
+    Seek
+    Obstacle avoidance
+    </p>
+    <p>
+    <h4>Seek</h4>
+    This method gives agents a force that pushes them in the right direction towards an object.
+    Agents move at a constant velocity forward, when the agent needs to 'turn' towards the object
+    it is seeking it receives a force that makes him turn smoothly.
+    <a href='http://www.red3d.com/cwr/steer/gdc99/figure3.gif' target='_blank'>example</a>
+    </p>
+    <p>
+    <h4>Obstacle avoidance</h4>
+    This methods looks alot like seek, but instead of turning towards an object it turns
+    away from it. Making the agent 'avoid' certain objects.
+    At high speeds however it could be that the agent has no time to steer away
+    and crashes into an object.
+    <a href='http://www.red3d.com/cwr/steer/gdc99/figure7.gif' target='_blank'>example</a>
+    </p>
+
+- title: The Dot product
+  imgUrl: '/assets/img/project4/thumbnail.gif'
+  date: 06-11-2018
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/TheDotProduct'>Github</a>.</small>
+    <p>
+    I came across this math formula called 'The Dot product' when looking at
+    Vector math <small>(used a lot in games)</small>. I wanted to try and understand how this
+    formula works and what it exactly does. I used alot of 'high-level' math documentation
+    on Vector math and this was kinda hard because i'm not really a mathematician, so yeah..
+    it took me a while to figure out...
+    But when i did i turned it into a simulation for myself as a practice.
+    </p>
+    <p>
+    As an extra challenge i wanted to learn about the 2D Vector space and how
+    to position things in the 2D Vector space and on the screen <small>(different spaces)</small>.
+    I wrote out my problem initially to Stackoverflow and figured out the answer to it
+    aswell. You can read it here: 
+    <a href='https://stackoverflow.com/questions/53195986/moving-the-origin-in-a-2d-vector-space/53216372#53216372'>
+    Moving the origin in a 2D Vector space
+    </a>
+    </p>
+    <p>
+    This project contains 2 little projects, 1 that contains a basic simulation show the projection
+    of a line onto a vector <small>(using the dot product)</small> and a project that contains a more advanced simulation
+    showing off how to detect wether a vector is inside a radius <small>(also using the dot product)</small>.
+    The second project was actually meant to practice on a 'vision cone' for agents inside a simulation.
+    </p>
+
+- title: Colony simulation
+  imgUrl: '/assets/img/project5/thumbnail.gif'
+  date: 23-7-2018
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/colony-simulation'>Github</a>.</small>
+    <p>
+    I had this idea for a pretty long time: a Colony simulation.
+    </p>
+    <p>
+    A Colony simulation or "Evolution simulation" is a simulation that
+    has a population of 'creatures' and each creature has some features
+    like: 
+    <ul>
+        <li>Speed</li>
+        <li>Hunger</li>
+        <li>Eyesight</li>
+        <li>...</li>
+    </ul>
+    The values for these features are randomized for the first population.
+    </p>
+    <p>
+    These creatures live in a world. In this world there are borders and food.
+    Borders cannot be crossed and food let's the creatures stay alive longer.
+    </p>
+    <p>
+    After a while a new population is created. This new population has new creatures,
+    but the values for the features of these new creatures are not random this time.
+    The values are taken from the 2 best performing creatures of the first population.
+    This is a step of the <a href='https://en.wikipedia.org/wiki/Genetic_algorithm'>Genetic Algorithm</a>.
+    </p>
+    <p>
+    The Genetic Algorithm works as follows:
+    </p>
+    <p>
+    <h4>#1 Get the best performing creatures</h4>
+    This is done by creating a 'fitness function'. Basically this function looks at 
+    a/more feature(s) and gives it a 'fitness value' based on how 'fit' the creature
+    is looking at these feature(s). A simple example is how much health each creature
+    has left. If the health degrades over time and increases with eating food, you can
+    determine that the creature with the most health is smarter than the rest
+    <small>(it knows how to look for food)</small> and thus the most 'fit'.
+    </p>
+    <p>
+    <h4>#2 Let the best 2 creatures make new DNA</h4>
+    Next when we have a list of all creatures ordered by their fitness value, we can pick
+    the best 2 creatures <small>(there are other methods, like choosing random or semi-random but that is
+    outside of this scope)</small> and get both their DNA's <small>(their feature values)</small>.
+    These 2 DNA's are going to be merged into 1 new DNA using a cross-over method.
+    Simply said: Get the first half of values from parent A and the second half of parent B.
+    </p>
+    <h4>#3 Mutation</h4>
+    <p>
+    Now to make this more interesting we can introduce mutation into the DNA 'merging' process.
+    What this does is it will change one of the values into a random other value <small>(within the features bounds ofcourse)</small>.
+    This does not happen everytime, it has a very low chance to occur <small>(i think i used 3%)</small>.<br>
+    more info about how i implemented the Genetic Algorithm: <a href='https://github.com/JohnnyDeeee/colony-simulation/blob/master/Assets/Scripts/GeneticAlgorithm.cs'>
+    GeneticAlgorithm.cs
+    </a>
+    </p>
+    <h4>#4 Creation</h4>
+    <p>
+    Now we can create a new population and give them all their new DNA.
+    </p>
+    <p>
+    The point of a Genetic Algorithm is finding a solution by creating alot of 'test', like these
+    populations. And using DNA merging tactics to find the solution faster than just 
+    guessing random things.
+    </p>
+    <p>
+    The 'solution' here is not really a solution, but observing the evolution in these creatures.
+    I have also added a <a href='https://en.wikipedia.org/wiki/Neural_network'>Neural Network</a> to each creature as a 'brain'. I'm not going to explain how
+    this works because it is very difficult and 'math heavy'. But basically it acts as a brain
+    and it makes the creature move depending on what it sees. <br>
+    As a solution you could say:
+    when you see food; go eat it.<br>
+    when you see a predator; run away.<br>
+    </p>
+    <p>
+    Now this project is not finished and i will not finish it...
+    It has alot of performance issues the way i have programmed it and i don't feel like
+    fixing those. Instead i'm learning more about Physics and Vectors so i can
+    make my own Physics system and start over <small>(Physics was a real bottleneck in this project regarding
+    performance)</small>
+    </p>
+
+- title: Fire with p5.js
+  imgUrl: '/assets/img/project6/thumbnail.gif'
+  date: 20-5-2018
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/p5js-fire'>Github</a>.</small>
+    <p>
+    A simple fire effect using the <a href='https://p5js.org/'>p5.js</a> library and a method called 
+    <a href='https://en.wikipedia.org/wiki/Perlin_noise'>Perlin Noise<a> to create the 'smokey' effect.
+    </p>
+
+- title: A* path finding
+  imgUrl: '/assets/img/project7/thumbnail.gif'
+  date: 06-3-2017
+  description: >
+    <small>Source code on <a href='https://github.com/JohnnyDeeee/Astar'>Github</a>.</small>
+    <p>
+    Using the pathfinding algorithm A* to find the shortest path between point A and B.
+    </p>

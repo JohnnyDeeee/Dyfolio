@@ -1,37 +1,22 @@
 [
   {
-    "link": "https://github.com/fiffeek",
+    "link": "https://github.com/JohnnyDeeee",
     "title": "github",
     "service": "github"
   },
   {
-    "link": "https://www.linkedin.com/in/filipmikina/",
+    "link": "https://www.linkedin.com/in/gerben-tesselaar-13758bb8/",
     "title": "linkedin",
     "service": "linkedin"
   },
   {
-    "link": "https://www.facebook.com/fiffeek",
+    "link": "https://www.facebook.com/gerben.tesselaar",
     "title": "facebook",
     "service": "facebook"
   },
   {
-    "link": "http://bit.ly/cvMikinaFilipV5",
-    "title": "online cv",
-    "service": "cv"
-  },
-  {
-    "link": "https://leetcode.com/fiffeek/",
-    "title": "leetcode",
-    "service": "leetcode"
-  },
-  {
-    "link": "https://www.youtube.com/channel/UCQ9ZvG9NtuWEGmZx7_HwrSg",
-    "title": "youtube",
-    "service": "youtube"
-  },
-  {
-    "link": "mailto:filipmikina@gmail.com",
-    "title": "contact",
+    "link": "mailto:gerben.tesselaar@outlook.com",
+    "title": "email",
     "service": "telegram"
   }
 ]

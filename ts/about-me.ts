@@ -60,7 +60,7 @@ class PersonalDataUpdater {
     }
 }
 
-let handler = new XMLHttpReqHandler("about", makeProjects);
+let handler = new XMLHttpReqHandler("about.json", makeProjects);
 
 function makeProjects(str: string) {
     let personalData: AboutMe = JSON.parse(str);

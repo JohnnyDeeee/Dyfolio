@@ -68,7 +68,7 @@ class Jobs {
     }
 }
 
-let handler = new XMLHttpReqHandler("jobs", makeJobs);
+let handler = new XMLHttpReqHandler("jobs.json", makeJobs);
 
 function makeJobs(str: string) {
     let jobs: JobDescription[] = JSON.parse(str);

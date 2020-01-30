@@ -27,9 +27,9 @@ class Project {
     }
 
     private generateImg() {
-        let img = document.createElement("div");
+        let img = document.createElement("img");
         img.classList.add("img-container");
-        img.style.backgroundImage = "url(\"" + this.desc.imgUrl + "\")";
+        img.src = this.desc.imgUrl;
 
         return img;
     }
@@ -37,17 +37,16 @@ class Project {
     private generateDesc() {
         let div = document.createElement("div");
         let h3 = document.createElement("h3");
-        let h4 = document.createElement("h4");
+		let h4 = document.createElement("h4");
         let p = document.createElement("p");
 
-        div.classList.add("text");
-
+		div.classList.add("text");
         h3.innerHTML = this.desc.title;
-        h4.innerHTML = this.desc.date;
+		h4.innerHTML = this.desc.date;
         p.innerHTML = this.desc.description;
 
         div.appendChild(h3);
-        div.appendChild(h4);
+		div.appendChild(h4);
         div.appendChild(p);
 
         return div;
@@ -76,10 +75,13 @@ class Projects {
     }
 }
 
-let handler = new XMLHttpReqHandler("projects", makeProjects);
+let handler = new XMLHttpReqHandler("projects.yaml", makeProjects);
+//let handler = new XMLHttpReqHandler("projects.json", makeProjects);
 
 function makeProjects(str: string) {
-    let projects: ProjectDesc[] = JSON.parse(str);
+    //let projects: ProjectDesc[] = JSON.parse(str);
+    let projects: ProjectDesc[] = jsyaml.safeLoad(str);
+	
     let dom = document.getElementById("projects-timeline");
     let aux = new Projects();
 

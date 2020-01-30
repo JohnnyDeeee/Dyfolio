@@ -84,7 +84,7 @@ class Nav {
     }
 }
 
-let handler = new XMLHttpReqHandler("socials", makeJobs);
+let handler = new XMLHttpReqHandler("socials.json", makeJobs);
 
 function makeJobs(str: string) {
     let socials: Social[] = JSON.parse(str);
