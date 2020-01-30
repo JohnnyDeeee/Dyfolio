@@ -1,8 +1,0 @@
-[
-  {
-    "title": "Gravitational Pull and Repelling",
-    "date": "06-01-2019",
-    "imgUrl": "assets/img/project1/thumbnail.gif",
-    "description": "In a team of four we tried to develop an interesting dungeon crawler game in Java using Ashley (in order to learn ECS and stuff). Personally, I was in charge of e.g. fov system, fog of war system, path-finding algorithms, procedural map generation and ai. <br> <br> More info and sourcecode on <a href='http://bit.ly/thelegendofericc'> github</a>."
-  }
-]
